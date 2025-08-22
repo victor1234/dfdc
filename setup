@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+chezmoi init --apply https://github.com/victor1234/dfdc.git
+
+exit 0
