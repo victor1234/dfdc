@@ -2,6 +2,9 @@
 
 set -euo pipefail
 
+# Mise
+curl https://mise.run/bash | sh
+
 # Chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/victor1234/dfdc.git
 
