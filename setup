@@ -4,4 +4,6 @@ set -euo pipefail
 
 chezmoi init --apply https://github.com/victor1234/dfdc.git
 
+curl https://mise.run/bash | sh
+
 exit 0
