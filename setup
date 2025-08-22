@@ -5,9 +5,6 @@ set -euo pipefail
 # Chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/victor1234/dfdc.git
 
-# Mise
-curl https://mise.run/bash | sh
-
 # Bash aliases
 echo "alias e='exit'" >>~/.bash_aliases
 
