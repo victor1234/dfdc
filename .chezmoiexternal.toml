@@ -1,0 +1,5 @@
+[".config/nvim"]
+type = "archive"
+url = "https://github.com/victor1234/astranvim/archive/refs/heads/master.zip"
+exact = true
+refreshPeriod = "7d"
