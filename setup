@@ -8,9 +8,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/victor12
 # Bash aliases
 echo "alias e='exit'" >>~/.bash_aliases
 
-# Setup git
-git config --global alias.st status
-git config --global alias.co commit
-git config --global alias.ch checkout
-
 exit 0
