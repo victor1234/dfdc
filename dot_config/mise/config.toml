@@ -1,3 +1,4 @@
 [tools]
 chezmoi = "latest"
 usage = "latest"
+bat = "latest"
