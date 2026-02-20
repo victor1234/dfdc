@@ -1,5 +1,5 @@
 alias e=exit
 alias la='ls -la'
 alias m=mise
-alias v=nvim
+alias n=nvim
 alias y=yazi
