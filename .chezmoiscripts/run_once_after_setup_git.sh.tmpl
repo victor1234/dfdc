@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+# Set username and email
+git config --global user.name "{{ .name }}
+git config --global user.email "{{ .email }}
+
 # Set aliases
 git config --global alias.st status
 git config --global alias.co commit
