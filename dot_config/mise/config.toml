@@ -2,3 +2,4 @@
 chezmoi = "latest"
 usage = "latest"
 bat = "latest"
+delta = "latest"
