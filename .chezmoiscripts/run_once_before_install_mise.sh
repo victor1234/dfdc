@@ -4,3 +4,4 @@ set -euo pipefail
 
 # Install mise wihtout non-error output
 curl https://mise.run/bash | MISE_QUIET=1 sh
+"$HOME"/.local/bin/mise install
