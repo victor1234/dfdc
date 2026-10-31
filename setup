@@ -4,5 +4,14 @@ set -euo pipefail
 
 # Chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/victor1234/dfdc.git --depth 1 --purge-binary --force
+mise_path="$HOME/.local/bin/mise"
+if "$mise_path" exec -- chezmoi --version >/dev/null 2>&1; then
+  "$mise_path" exec -- chezmoi init --apply \
+    https://github.com/victor1234/dfdc.git --depth 1 --force
+else
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply \
+    https://github.com/victor1234/dfdc.git \
+    --depth 1 --purge-binary --force
+fi
 
 exit 0
